@@ -63,9 +63,8 @@ func main() {
 	}
 
 	
-	// sort.Float64s(numbers)
 	fmt.Println("Average :", math.Round((average(numbers))))
 	fmt.Println("Median :", math.Round(median(numbers)))
-	fmt.Println("Variance :", math.Round(variance(numbers)))
+	fmt.Println("Variance :", int(variance(numbers)))
 	fmt.Println("Standard deviation :", math.Round(standardDeviation(numbers)))
 }
