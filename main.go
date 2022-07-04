@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -63,6 +64,7 @@ func main() {
 	}
 
 	
+	sort.Float64s(numbers)
 	fmt.Println("Average :", math.Round((average(numbers))))
 	fmt.Println("Median :", math.Round(median(numbers)))
 	fmt.Println("Variance :", int(variance(numbers)))
